@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+
+.element-new{
+    height: 800px;
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+    background-color: darkorange;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+
+
+  height: 100vh;
+  border: 2px solid #333;
+  overflow: scroll;
+}
+
+.element {
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+
+
+  height: 100vh;
+  color: white;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+.element:nth-child(even) {
+  background: #1d1e21;
+}
+.element:nth-child(odd) {
+  background: #ee6620;
+}
+
+
+
+
